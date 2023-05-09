@@ -11,7 +11,7 @@ import ToasterProvider from './providers/ToasterProvider';
 import LoginModel from './LoginModel';
 // import { useContext } from 'react';
 // import { useGlobalContext } from './context';
-function App() {
+export default function App() {
   // let data =useContext(AppContext)
   // let data = useGlobalContext()
   // console.log(data)
@@ -26,7 +26,6 @@ function App() {
         <Header />
         <Routes>
           <Route path="search" element={<SearchPage />} />
-
           <Route path="/" element={<Home />} />
         </Routes>
         <Footer />
@@ -34,5 +33,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
